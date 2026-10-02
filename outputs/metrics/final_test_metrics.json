@@ -1,0 +1,27 @@
+{
+    "model": "XGBoost",
+    "optimal_threshold": 0.2,
+    "test_metrics": {
+        "PR-AUC": 0.1655,
+        "ROC-AUC": 0.6012,
+        "default_threshold_0.50": {
+            "precision": 0.9412,
+            "recall": 0.122,
+            "f1": 0.2159,
+            "TP": 80,
+            "FP": 5,
+            "FN": 576,
+            "TN": 47570
+        },
+        "tuned_threshold": {
+            "threshold": 0.2,
+            "precision": 0.7167,
+            "recall": 0.1311,
+            "f1": 0.2216,
+            "TP": 86,
+            "FP": 34,
+            "FN": 570,
+            "TN": 47541
+        }
+    }
+}

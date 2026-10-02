@@ -1,0 +1,107 @@
+[
+    {
+        "fraud_probability": 0.0057,
+        "anomaly_score": 0.1587,
+        "combined_risk_score": 0.0516,
+        "risk_category": "LOW",
+        "action": "APPROVE",
+        "action_description": "Low-risk transaction. Process instantly without friction.",
+        "explanation_reasons": [
+            {
+                "feature": "CUSTOMER_TX_COUNT_7D",
+                "value": 2.0,
+                "impact": -0.5185,
+                "direction": "REDUCED RISK (-)"
+            },
+            {
+                "feature": "TX_HOUR",
+                "value": 22.0,
+                "impact": 0.3185,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "CUSTOMER_AMOUNT_RATIO",
+                "value": 0.21,
+                "impact": -0.1486,
+                "direction": "REDUCED RISK (-)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_7D",
+                "value": 57.16,
+                "impact": -0.0955,
+                "direction": "REDUCED RISK (-)"
+            }
+        ],
+        "disclaimer": "NOTE: Tier boundaries and combined score weighting (alpha=0.70) are project-defined parameters and do not represent universal industry standards."
+    },
+    {
+        "fraud_probability": 0.4867,
+        "anomaly_score": 0.5626,
+        "combined_risk_score": 0.5095,
+        "risk_category": "MEDIUM",
+        "action": "CHALLENGE_2FA",
+        "action_description": "Moderate risk. Trigger step-up verification (SMS / push OTP).",
+        "explanation_reasons": [
+            {
+                "feature": "CUSTOMER_AMOUNT_RATIO",
+                "value": 4.85,
+                "impact": 3.1979,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "CUSTOMER_TX_COUNT_7D",
+                "value": 10.0,
+                "impact": 0.9699,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_7D",
+                "value": 17.92,
+                "impact": 0.2163,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "TX_AMOUNT",
+                "value": 86.89,
+                "impact": 0.2016,
+                "direction": "INCREASED RISK (+)"
+            }
+        ],
+        "disclaimer": "NOTE: Tier boundaries and combined score weighting (alpha=0.70) are project-defined parameters and do not represent universal industry standards."
+    },
+    {
+        "fraud_probability": 0.9732,
+        "anomaly_score": 0.755,
+        "combined_risk_score": 0.9077,
+        "risk_category": "HIGH",
+        "action": "DECLINE",
+        "action_description": "High risk. Decline authorization and alert cardholder.",
+        "explanation_reasons": [
+            {
+                "feature": "TX_AMOUNT",
+                "value": 351.35,
+                "impact": 4.1136,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_7D",
+                "value": 123.84,
+                "impact": 2.8472,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "CUSTOMER_AMOUNT_RATIO",
+                "value": 2.84,
+                "impact": 1.0751,
+                "direction": "INCREASED RISK (+)"
+            },
+            {
+                "feature": "CUSTOMER_TX_COUNT_7D",
+                "value": 9.0,
+                "impact": 0.251,
+                "direction": "INCREASED RISK (+)"
+            }
+        ],
+        "disclaimer": "NOTE: Tier boundaries and combined score weighting (alpha=0.70) are project-defined parameters and do not represent universal industry standards."
+    }
+]

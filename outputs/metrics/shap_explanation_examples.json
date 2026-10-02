@@ -1,0 +1,161 @@
+[
+    {
+        "transaction_id": 191776,
+        "cohort": "True Positive (Caught Fraud)",
+        "true_label": 1,
+        "predicted_probability": 0.9965,
+        "base_log_odds": -4.7343,
+        "top_fraud_factors": [
+            {
+                "feature": "TX_AMOUNT",
+                "value": 521.1,
+                "shap_value": 4.6752,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_AMOUNT_RATIO",
+                "value": 4.3004746,
+                "shap_value": 2.6389,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_7D",
+                "value": 121.17167,
+                "shap_value": 1.8031,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_1D",
+                "value": 381.7,
+                "shap_value": 0.3931,
+                "direction": "Pushes toward FRAUD (+)"
+            }
+        ],
+        "top_legit_factors": [
+            {
+                "feature": "TX_DAY_OF_WEEK",
+                "value": 1.0,
+                "shap_value": -0.0256,
+                "direction": "Pushes toward LEGIT (-)"
+            }
+        ]
+    },
+    {
+        "transaction_id": 150870,
+        "cohort": "False Positive (Innocent Flagged)",
+        "true_label": 0,
+        "predicted_probability": 0.9156,
+        "base_log_odds": -4.7343,
+        "top_fraud_factors": [
+            {
+                "feature": "TX_AMOUNT",
+                "value": 166.21,
+                "shap_value": 4.1587,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_7D",
+                "value": 128.68666,
+                "shap_value": 2.5577,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_1D",
+                "value": 399.05,
+                "shap_value": 0.6867,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "TX_AMOUNT_LOG",
+                "value": 5.119250507474578,
+                "shap_value": 0.2975,
+                "direction": "Pushes toward FRAUD (+)"
+            }
+        ],
+        "top_legit_factors": [
+            {
+                "feature": "CUSTOMER_AMOUNT_RATIO",
+                "value": 1.2915767,
+                "shap_value": -0.5995,
+                "direction": "Pushes toward LEGIT (-)"
+            },
+            {
+                "feature": "TX_HOUR",
+                "value": 13.0,
+                "shap_value": -0.095,
+                "direction": "Pushes toward LEGIT (-)"
+            },
+            {
+                "feature": "TERMINAL_AVG_AMOUNT_1D",
+                "value": 56.5,
+                "shap_value": -0.0497,
+                "direction": "Pushes toward LEGIT (-)"
+            },
+            {
+                "feature": "TERMINAL_TX_COUNT_1D",
+                "value": 1.0,
+                "shap_value": -0.0276,
+                "direction": "Pushes toward LEGIT (-)"
+            }
+        ]
+    },
+    {
+        "transaction_id": 176966,
+        "cohort": "False Negative (Fraud Missed)",
+        "true_label": 1,
+        "predicted_probability": 0.0012,
+        "base_log_odds": -4.7343,
+        "top_fraud_factors": [
+            {
+                "feature": "CUSTOMER_TX_COUNT_24H",
+                "value": 0.0,
+                "shap_value": 0.0506,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_1D",
+                "value": 41.37,
+                "shap_value": 0.047,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "TX_HOUR",
+                "value": 23.0,
+                "shap_value": 0.0226,
+                "direction": "Pushes toward FRAUD (+)"
+            },
+            {
+                "feature": "CUSTOMER_TX_COUNT_1H",
+                "value": 0.0,
+                "shap_value": 0.0075,
+                "direction": "Pushes toward FRAUD (+)"
+            }
+        ],
+        "top_legit_factors": [
+            {
+                "feature": "CUSTOMER_TX_COUNT_7D",
+                "value": 0.0,
+                "shap_value": -1.4696,
+                "direction": "Pushes toward LEGIT (-)"
+            },
+            {
+                "feature": "CUSTOMER_AVG_AMOUNT_7D",
+                "value": 44.32823,
+                "shap_value": -0.1583,
+                "direction": "Pushes toward LEGIT (-)"
+            },
+            {
+                "feature": "TX_AMOUNT",
+                "value": 39.28,
+                "shap_value": -0.1395,
+                "direction": "Pushes toward LEGIT (-)"
+            },
+            {
+                "feature": "TX_DAY_OF_WEEK",
+                "value": 4.0,
+                "shap_value": -0.129,
+                "direction": "Pushes toward LEGIT (-)"
+            }
+        ]
+    }
+]

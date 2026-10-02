@@ -1,0 +1,48 @@
+{
+    "total_records": 241151,
+    "feature_count": 14,
+    "feature_names": [
+        "TX_AMOUNT",
+        "TX_AMOUNT_LOG",
+        "TX_HOUR",
+        "TX_DAY_OF_WEEK",
+        "TX_IS_WEEKEND",
+        "TX_IS_NIGHT",
+        "CUSTOMER_TX_COUNT_1H",
+        "CUSTOMER_TX_COUNT_24H",
+        "CUSTOMER_TX_COUNT_7D",
+        "CUSTOMER_AVG_AMOUNT_1D",
+        "CUSTOMER_AVG_AMOUNT_7D",
+        "CUSTOMER_AMOUNT_RATIO",
+        "TERMINAL_TX_COUNT_1D",
+        "TERMINAL_AVG_AMOUNT_1D"
+    ],
+    "imputation_values": {
+        "CUSTOMER_AVG_AMOUNT_1D": 41.369998931884766,
+        "CUSTOMER_AVG_AMOUNT_7D": 44.32823181152344,
+        "TERMINAL_AVG_AMOUNT_1D": 41.439998626708984
+    },
+    "splits": {
+        "train": {
+            "count": 144690,
+            "fraud_count": 1346,
+            "fraud_rate_pct": 0.93,
+            "start_time": "2026-01-01 00:00:50.671565603",
+            "end_time": "2026-02-06 00:12:30.236302327"
+        },
+        "validation": {
+            "count": 48230,
+            "fraud_count": 669,
+            "fraud_rate_pct": 1.39,
+            "start_time": "2026-02-06 00:12:36.771442791",
+            "end_time": "2026-02-17 22:28:15.742471735"
+        },
+        "test": {
+            "count": 48231,
+            "fraud_count": 656,
+            "fraud_rate_pct": 1.36,
+            "start_time": "2026-02-17 22:28:33.601041221",
+            "end_time": "2026-03-01 23:59:51.208180006"
+        }
+    }
+}

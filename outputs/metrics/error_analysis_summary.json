@@ -1,0 +1,65 @@
+{
+    "cohort_counts": {
+        "TN": 47526,
+        "FP": 35,
+        "FN": 582,
+        "TP": 87
+    },
+    "cohort_means": {
+        "TN": {
+            "TX_AMOUNT": 45.75,
+            "CUSTOMER_AMOUNT_RATIO": 1.04,
+            "CUSTOMER_TX_COUNT_1H": 0.05,
+            "CUSTOMER_TX_COUNT_24H": 1.28,
+            "TERMINAL_TX_COUNT_1D": 0.83,
+            "TX_IS_NIGHT": 0.25
+        },
+        "FP": {
+            "TX_AMOUNT": 156.25,
+            "CUSTOMER_AMOUNT_RATIO": 2.52,
+            "CUSTOMER_TX_COUNT_1H": 0.06,
+            "CUSTOMER_TX_COUNT_24H": 0.89,
+            "TERMINAL_TX_COUNT_1D": 1.14,
+            "TX_IS_NIGHT": 0.31
+        },
+        "FN": {
+            "TX_AMOUNT": 49.19,
+            "CUSTOMER_AMOUNT_RATIO": 1.12,
+            "CUSTOMER_TX_COUNT_1H": 0.06,
+            "CUSTOMER_TX_COUNT_24H": 1.25,
+            "TERMINAL_TX_COUNT_1D": 0.83,
+            "TX_IS_NIGHT": 0.26
+        },
+        "TP": {
+            "TX_AMOUNT": 341.52,
+            "CUSTOMER_AMOUNT_RATIO": 3.82,
+            "CUSTOMER_TX_COUNT_1H": 0.07,
+            "CUSTOMER_TX_COUNT_24H": 1.3,
+            "TERMINAL_TX_COUNT_1D": 0.84,
+            "TX_IS_NIGHT": 0.22
+        }
+    },
+    "scenario_detection": {
+        "1": {
+            "name": "Scenario 1: High Amount (> 220)",
+            "total": 1,
+            "caught": 1,
+            "missed": 0,
+            "recall_pct": 100.0
+        },
+        "2": {
+            "name": "Scenario 2: Compromised Terminal Window",
+            "total": 540,
+            "caught": 0,
+            "missed": 540,
+            "recall_pct": 0.0
+        },
+        "3": {
+            "name": "Scenario 3: Account Takeover (5x Amount)",
+            "total": 128,
+            "caught": 86,
+            "missed": 42,
+            "recall_pct": 67.2
+        }
+    }
+}

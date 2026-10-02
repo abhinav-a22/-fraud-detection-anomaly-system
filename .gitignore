@@ -8,12 +8,11 @@ venv/
 .venv/
 .pytest_cache/
 .ipynb_checkpoints/
+
+# Raw and processed large dataset files (re-generated via src/generate_data.py)
 data/raw/*.csv
 data/processed/*.csv
 data/processed/*.parquet
-models/*/*.joblib
-models/*/*.json
-outputs/plots/*.png
-outputs/predictions/*.csv
-outputs/metrics/*.json
 
+# Intermediate prediction dump files
+outputs/predictions/*.csv
